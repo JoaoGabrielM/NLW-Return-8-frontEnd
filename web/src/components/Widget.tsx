@@ -5,7 +5,7 @@ import { WidgetForm } from './WidgetForm'
 
 export function Widget() {
     return (
-        <Popover className="absolute bottom-4 right-4 md:bottom-8 md:right-8 flex flex-col items-end">
+        <Popover className="absolute bottom-4 right-4 md:bottom-8 md:right-8 flex flex-col items-end"> {/* Ajustando a distância da lateral, quando o dispositivo foi de medium pra cima vai ficar mais distante */}
             <Popover.Panel><WidgetForm/></Popover.Panel>
             <Popover.Button className="bg-brand-500 rounded-full px-3 h-12 text-white flex items-center group"> {/* colocando a cor definida nas configurações do tailwind*/}
                 <ChatTeardropDots className="w-6 h-6"/> {/* A tag ground no button diz que todos os elementos dentro dele são do mesmo grupo */}
